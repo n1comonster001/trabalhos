@@ -1,0 +1,30 @@
+-- Table: public.aluno
+
+CREATE TABLE IF NOT EXISTS public.aluno
+(
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    curso VARCHAR(100),
+    matricula VARCHAR(50)
+);
+
+ALTER TABLE public.aluno OWNER TO postgres;
+
+
+
+
+
+
+
+-- Table: public.professor
+
+CREATE TABLE IF NOT EXISTS public.professor
+(
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    disciplina VARCHAR(100)
+);
+
+ALTER TABLE public.professor OWNER TO postgres;
